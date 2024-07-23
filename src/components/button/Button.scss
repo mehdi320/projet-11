@@ -1,0 +1,27 @@
+@import "../../style/mixin.scss";
+
+.transaction-content-wrapper {
+    width: 100%;
+    flex: 1;
+
+    @include Mobile {
+        flex: 0;
+    }
+
+    .transaction-button {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        border-color: #00bc77;
+        background-color: #00bc77;
+        color: #fff;
+        text-decoration: none;
+
+        @include Mobile {
+            width: 200px;
+        }
+    }
+}
