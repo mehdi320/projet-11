@@ -1,39 +1,65 @@
+// Styles pour la barre de navigation principale
 .main-nav {
+    // Utilise flexbox pour disposer les éléments horizontalement
     display: flex;
+    // Espace les éléments de manière égale avec un espace entre eux
     justify-content: space-between;
+    // Aligne les éléments verticalement au centre
     align-items: center;
+    // Ajoute du padding autour de la barre de navigation
     padding: 5px 20px;
 
+    // Styles pour les liens dans la barre de navigation
     a {
+        // Met le texte en gras
         font-weight: bold;
+        // Définit la couleur du texte
         color: #2c3e50;
     }
 
+    // Styles pour les éléments de navigation principaux
     .main-nav-item {
+        // Supprime la décoration de texte par défaut (soulignement)
         text-decoration: none;
+        // Ajoute une marge à droite pour espacer les éléments horizontalement
         margin-right: 0.5rem;
 
+        // Styles lors du survol de l'élément
         &:hover {
+            // Ajoute une décoration de texte soulignée lors du survol
             text-decoration: underline;
         }
     }
 
+    // Styles pour le bouton de déconnexion
     .btn-logout {
+        // Supprime la bordure par défaut
         border: none;
+        // Supprime le fond par défaut
         background: none;
+        // Met le texte en gras
         font-weight: bold;
+        // Définit la couleur du texte
         color: #2c3e50;
+        // Définit la famille de police
         font-family: Avenir, Helvetica, Arial, sans-serif;
+        // Lissage de la police pour Webkit
         -webkit-font-smoothing: antialiased;
+        // Lissage de la police pour Moz
         -moz-osx-font-smoothing: grayscale;
     }
 }
 
+// Styles pour le nom d'utilisateur dans la navigation principale
 .main-nav-name {
+    // Définit la taille de la police
     font-size: 16px;
+    // Met le texte en semi-gras
     font-weight: 600;
 }
 
+// Styles pour les icônes Font Awesome
 .fa {
+    // Ajoute une marge à droite pour espacer les icônes du texte
     margin-right: 5px;
 }

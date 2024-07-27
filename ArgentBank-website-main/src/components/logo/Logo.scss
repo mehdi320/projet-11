@@ -1,23 +1,39 @@
+// Styles pour le lien principal contenant le logo
 .main-nav-logo {
+    // Utilisation de flexbox pour aligner les éléments horizontalement
     display: flex;
+    // Alignement vertical des éléments au centre
     align-items: center;
 
+    // Styles pour l'image du logo
     .main-nav-logo-image {
+        // Assure que l'image ne dépasse pas la largeur de son conteneur
         max-width: 100%;
+        // Définit une largeur fixe pour l'image
         width: 200px;
     }
 
+    // Styles pour les éléments visibles uniquement pour les lecteurs d'écran
     .sr-only {
+        // Supprime les bordures pour cet élément
         border: 0 !important;
+        // Technique pour cacher visuellement l'élément mais le rendre accessible aux lecteurs d'écran
         clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
         -webkit-clip-path: inset(50%) !important;
         clip-path: inset(50%) !important; /* 2 */
+        // Réduit la hauteur à 1 pixel
         height: 1px !important;
+        // Supprime la marge
         margin: -1px !important;
+        // Cache tout débordement
         overflow: hidden !important;
+        // Supprime le padding
         padding: 0 !important;
+        // Positionne l'élément de manière absolue pour qu'il n'affecte pas la mise en page
         position: absolute !important;
+        // Réduit la largeur à 1 pixel
         width: 1px !important;
+        // Empêche l'élément de s'étendre sur plusieurs lignes
         white-space: nowrap !important; /* 3 */
     }
 }
