@@ -1,0 +1,35 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+.main-nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+.main-nav .main-nav-item {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+.main-nav .main-nav-item:hover {
+  text-decoration: underline;
+}
+.main-nav .btn-logout {
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #2c3e50;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-nav-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.fa {
+  margin-right: 5px;
+}/*# sourceMappingURL=Header.css.map */

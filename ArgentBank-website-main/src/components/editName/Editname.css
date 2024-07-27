@@ -1,0 +1,30 @@
+.form-edit {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  margin: auto;
+}
+.form-edit .input-edit {
+  margin: 7px;
+}
+.form-edit .input-edit label {
+  margin-right: 10px;
+}
+.form-edit .input-edit input {
+  border-radius: 5px;
+}
+.form-edit .btn-edit {
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+.form-edit .btn-edit button {
+  border-radius: 5px;
+  padding: 15px 25px;
+  color: #fff;
+  border-color: #00bc77;
+  background-color: #00bc77;
+  font-weight: bold;
+  text-decoration: none;
+}/*# sourceMappingURL=Editname.css.map */
