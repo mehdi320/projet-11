@@ -1,0 +1,53 @@
+[
+    {
+        "_id": "u1", // Utilisé par la route GET /api/v1/user/{userId}/accounts
+        "profile": {
+            "firstName": "Tony",
+            "lastName": "Stark",
+            "email": "tony@stark.com",
+            "password": "password123",
+            "userName": "Iron"
+        },
+        "accounts": [
+            {
+                "_id": "1", // Utilisé par la route GET /api/v1/accounts/{accountId}/transactions
+                "title": "Argent Bank Checking (x8349)",
+                "amount": "$2.082.79",
+                "description": "Available Balance",
+                "transactions": [
+                    {
+                        "_id": "t1", // Utilisé par les routes PATCH /api/v1/transactions/{transactionId}/category et /api/v1/transactions/{transactionId}/note, et DELETE /api/v1/transactions/{transactionId}/note
+                        "date": "2020-02-27",
+                        "description": "Golden Sun Bakery",
+                        "amount": 8,
+                        "balance": 298,
+                        "transaction_type": "Electronic",
+                        "category": "Food", // Modifié par la route PATCH /api/v1/transactions/{transactionId}/category
+                        "note": "Iorem ipsum" // Modifié par la route PATCH /api/v1/transactions/{transactionId}/note et supprimé par la route DELETE /api/v1/transactions/{transactionId}/note
+                    },
+                    {
+                        "_id": "t2", // Utilisé par les routes PATCH /api/v1/transactions/{transactionId}/category et /api/v1/transactions/{transactionId}/note, et DELETE /api/v1/transactions/{transactionId}/note
+                        "date": "2020-02-29",
+                        "description": "Golden Sun Bakery",
+                        "amount": 2000,
+                        "balance": 11500,
+                        "transaction_type": "deposit",
+                        "category": "hobbie", // Modifié par la route PATCH /api/v1/transactions/{transactionId}/category
+                        "note": "Iorem ipsum" // Modifié par la route PATCH /api/v1/transactions/{transactionId}/note et supprimé par la route DELETE /api/v1/transactions/{transactionId}/note
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": "u2", // Utilisé par la route GET /api/v1/user/{userId}/accounts
+        "profile": {
+            "firstName": "Steve",
+            "lastName": "Rogers",
+            "email": "steve@rogers.com",
+            "password": "password456",
+            "userName": "Cap"
+        },
+        "accounts": [] // Vide, donc la route GET /api/v1/accounts/{accountId}/transactions renverrait une erreur 404 pour cet utilisateur
+    }
+]
